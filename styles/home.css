@@ -24,3 +24,11 @@
 .picked {
     transform: translateY(125px);
 }
+
+.hide {
+    display: none;
+}
+
+.drop-target {
+
+}
