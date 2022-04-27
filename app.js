@@ -56,9 +56,7 @@ sodaConst.addEventListener('dragstart', (e) => {
     e.dataTransfer.setData('text/plain', e.target.id);
     setTimeout(() => {
         e.target.classList.add('hide');
-    },0);
-});
-sodaConst.addEventListener('dragend', (e) => {
+    }, 0);
 });
 
 cheeseConst.addEventListener('drag', (e) => {
@@ -68,9 +66,7 @@ cheeseConst.addEventListener('dragstart', (e) => {
     e.dataTransfer.setData('text/plain', e.target.id);
     setTimeout(() => {
         e.target.classList.add('hide');
-    },0);
-});
-cheeseConst.addEventListener('dragend', (e) => {
+    }, 0);
 });
 
 grapesConst.addEventListener('drag', (e) => {
@@ -80,9 +76,7 @@ grapesConst.addEventListener('dragstart', (e) => {
     e.dataTransfer.setData('text/plain', e.target.id);
     setTimeout(() => {
         e.target.classList.add('hide');
-    },0);
-});
-grapesConst.addEventListener('dragend', (e) => {
+    }, 0);
 });
 
 breadConst.addEventListener('drag', (e) => {
@@ -92,9 +86,7 @@ breadConst.addEventListener('dragstart', (e) => {
     e.dataTransfer.setData('text/plain', e.target.id);
     setTimeout(() => {
         e.target.classList.add('hide');
-    },0);
-});
-breadConst.addEventListener('dragend', (e) => {
+    }, 0);
 });
 
 watermelonConst.addEventListener('drag', (e) => {
@@ -104,7 +96,5 @@ watermelonConst.addEventListener('dragstart', (e) => {
     e.dataTransfer.setData('text/plain', e.target.id);
     setTimeout(() => {
         e.target.classList.add('hide');
-    },0);
-});
-watermelonConst.addEventListener('dragend', (e) => {
+    }, 0);
 });
