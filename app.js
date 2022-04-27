@@ -67,28 +67,74 @@ blanketConst.addEventListener('drop', (e) => {
     draggable.classList.remove('hide');
 });
 
+cheeseConst.addEventListener('drag', (e) => {
+    e.preventDefault();
+});
+cheeseConst.addEventListener('dragstart', (e) => {
+    e.dataTransfer.setData('text/plain', e.target.id);
+    setTimeout(() => {
+        e.target.classList.add('hide');
+    },0);
+});
+cheeseConst.addEventListener('dragend', (e) => {
+});
+cheeseConst.addEventListener('drop', (e) => {
+    const id = e.dataTransfer.getData('text/plain');
+    const draggable = document.getElementById(id);
+    e.target.appendChild(draggable);
+    draggable.classList.remove('hide');
+});
 
-// cheeseConst.addEventListener('drop', drop);
-// grapesConst.addEventListener('drop', drop);
-// breadConst.addEventListener('drop', drop);
-// watermelonConst.addEventListener('drop', drop);
+grapesConst.addEventListener('drag', (e) => {
+    e.preventDefault();
+});
+grapesConst.addEventListener('dragstart', (e) => {
+    e.dataTransfer.setData('text/plain', e.target.id);
+    setTimeout(() => {
+        e.target.classList.add('hide');
+    },0);
+});
+grapesConst.addEventListener('dragend', (e) => {
+});
+grapesConst.addEventListener('drop', (e) => {
+    const id = e.dataTransfer.getData('text/plain');
+    const draggable = document.getElementById(id);
+    e.target.appendChild(draggable);
+    draggable.classList.remove('hide');
+});
 
-// sodaConst.addEventListener('click', () => {
-//     sodaConst.classList.toggle('picked');    
-// });
+breadConst.addEventListener('drag', (e) => {
+    e.preventDefault();
+});
+breadConst.addEventListener('dragstart', (e) => {
+    e.dataTransfer.setData('text/plain', e.target.id);
+    setTimeout(() => {
+        e.target.classList.add('hide');
+    },0);
+});
+breadConst.addEventListener('dragend', (e) => {
+});
+breadConst.addEventListener('drop', (e) => {
+    const id = e.dataTransfer.getData('text/plain');
+    const draggable = document.getElementById(id);
+    e.target.appendChild(draggable);
+    draggable.classList.remove('hide');
+});
 
-// cheeseConst.addEventListener('drop', () => {
-//     cheeseConst.classList.toggle('picked');
-// });
-
-// grapesConst.addEventListener('drop', () => {
-//     grapesConst.classList.toggle('picked');
-// });
-
-// breadConst.addEventListener('drop', () => {
-//     breadConst.classList.toggle('picked');
-// });
-
-// watermelonConst.addEventListener('drop', () => {
-//     watermelonConst.classList.toggle('picked');
-// });
+watermelonConst.addEventListener('drag', (e) => {
+    e.preventDefault();
+});
+watermelonConst.addEventListener('dragstart', (e) => {
+    e.dataTransfer.setData('text/plain', e.target.id);
+    setTimeout(() => {
+        e.target.classList.add('hide');
+    },0);
+});
+watermelonConst.addEventListener('dragend', (e) => {
+});
+watermelonConst.addEventListener('drop', (e) => {
+    const id = e.dataTransfer.getData('text/plain');
+    const draggable = document.getElementById(id);
+    e.target.appendChild(draggable);
+    draggable.classList.remove('hide');
+});
