@@ -1,6 +1,6 @@
 const sodaConst = document.getElementById('soda');
 const cheeseConst = document.getElementById('cheese');
-
+const grapesConst = document.getElementById('grapes');
 
 
 sodaConst.addEventListener('click', () => {
@@ -9,4 +9,8 @@ sodaConst.addEventListener('click', () => {
 
 cheeseConst.addEventListener('click', () => {
     cheeseConst.classList.toggle('picked');
+});
+
+grapesConst.addEventListener('click', () => {
+    grapesConst.classList.toggle('picked');
 });
